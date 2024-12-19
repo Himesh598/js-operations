@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <style>
+        body{
+    text-align: center;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/010/229/775/large_2x/school-supplies-notebooks-pencils-on-grey-background-with-copy-space-photo.jpg);
+}
+
+h1{
+    color:red;
+}
+    </style>
+    </head>
+    <body>
+        <h1>Math Operations</h1>
+        <br>
+        <br>
+        <br>
+        <p><u>number : 12.7</u></p>
+        
+        <p id="floor"></p>
+        <p id="max"></p>
+        <p id="min"></p>
+        <p id="power"></p>
+        <p id="random"></p>
+        <p id="rounded"></p>
+        <p id="root"></p> 
+       
+        <script>
+            
+            let a = Math.floor(12.7)
+            document.getElementById('floor').innerHTML = "floor: " + a
+            
+            let b = Math.max(67,43)
+            document.getElementById('max').innerHTML = "max: " + b
+             
+            let c = Math.min(12,3)
+            document.getElementById('min').innerHTML = "min: " + c
+             
+            let d = Math.pow(10,2)
+            document.getElementById('power').innerHTML = "power: " + d
+             
+            let e =Math.floor(Math.random()*10)
+            document.getElementById('random').innerHTML = "random: " + e 
+             
+            let f = Math.round(12.7)
+            document.getElementById('rounded').innerHTML = "rounded: " + f
+            
+            let g = Math.sqrt(12.6736)
+            document.getElementById('root').innerHTML = "root: " + g
+
+        </script>
+    </body>
+</html>
